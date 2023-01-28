@@ -17,8 +17,8 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'zakariahibaoui2002@gmail.com';                     //SMTP username
-    $mail->Password   = 'suqjrpthacwidwtf';                               //SMTP password
+    $mail->Username   = 'your_email_here';                     //SMTP username
+    $mail->Password   = 'your_PAssword';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
@@ -29,11 +29,11 @@ try {
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
-    $a ="zakaria.hibaoui@usmba.ac.ma";
-    $mail->From = "zakaria.hibaoui@usmba.ac.ma";
-    $mail->FromName ="zakaria HIBAOUI";
-    $mail->addReplyTo('zakariahibaoui2002@gmail.com','zakaria HIBAOUI');
-    $mail->addAddress($a ,'ZAKARIA HIBAOUI');
+    $a ="emaail-of_receiver";
+    $mail->From = "receiver_email";
+    $mail->FromName ="receiver_name";
+    $mail->addReplyTo('your_email','your name');
+    $mail->addAddress($a ,'email');
 
     //Attachments
     $mail->addAttachment('index.php');         //Add attachments
